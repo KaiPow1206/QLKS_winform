@@ -1,6 +1,4 @@
-﻿# Ignore Visual Studio temporary files, build results, and
-# user-specific settings
-
+﻿# Ignore Visual Studio temporary files and settings
 .vs/
 *.user
 *.suo
