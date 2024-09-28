@@ -22,3 +22,16 @@ C:\anhthai\winform C#\QLKS\winfrom_c-QLKS\QLKS\obj\Debug\QLKS.csproj.CoreCompile
 C:\anhthai\winform C#\QLKS\winfrom_c-QLKS\QLKS\obj\Debug\QLKS.csproj.Up2Date
 C:\anhthai\winform C#\QLKS\winfrom_c-QLKS\QLKS\obj\Debug\QLKS.exe
 C:\anhthai\winform C#\QLKS\winfrom_c-QLKS\QLKS\obj\Debug\QLKS.pdb
+C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\bin\Debug\QLKS.exe.config
+C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\bin\Debug\QLKS.exe
+C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\bin\Debug\QLKS.pdb
+C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\bin\Debug\Guna.UI2.dll
+C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\obj\Debug\QLKS.csproj.AssemblyReference.cache
+C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\obj\Debug\QLKS.Dashboard.resources
+C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\obj\Debug\QLKS.Form1.resources
+C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\obj\Debug\QLKS.Properties.Resources.resources
+C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\obj\Debug\QLKS.csproj.GenerateResource.cache
+C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\obj\Debug\QLKS.csproj.CoreCompileInputs.cache
+C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\obj\Debug\QLKS.csproj.Up2Date
+C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\obj\Debug\QLKS.exe
+C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\obj\Debug\QLKS.pdb
