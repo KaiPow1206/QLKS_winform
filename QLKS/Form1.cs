@@ -57,7 +57,9 @@ namespace QLKS
             }
             else
             {
-                Application.Exit();
+                Dashboard ds = new Dashboard();
+                this.Hide();
+                ds.Show();
             }
 
 
