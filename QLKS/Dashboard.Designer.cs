@@ -42,7 +42,9 @@
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.panel1.SuspendLayout();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -67,7 +69,7 @@
             this.btn_cancel.ForeColor = System.Drawing.Color.Black;
             this.btn_cancel.Image = global::QLKS.Properties.Resources.pngwing_com;
             this.btn_cancel.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_cancel.Location = new System.Drawing.Point(12, 12);
+            this.btn_cancel.Location = new System.Drawing.Point(262, 117);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(98, 65);
             this.btn_cancel.TabIndex = 0;
@@ -86,7 +88,7 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.Image = global::QLKS.Properties.Resources.save_button;
             this.guna2Button1.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button1.Location = new System.Drawing.Point(12, 83);
+            this.guna2Button1.Location = new System.Drawing.Point(12, 117);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(115, 65);
             this.guna2Button1.TabIndex = 1;
@@ -96,14 +98,9 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.guna2Button6);
-            this.panel1.Controls.Add(this.guna2Button5);
-            this.panel1.Controls.Add(this.guna2Button4);
-            this.panel1.Controls.Add(this.guna2Button3);
-            this.panel1.Controls.Add(this.guna2Button2);
-            this.panel1.Location = new System.Drawing.Point(154, 21);
+            this.panel1.Location = new System.Drawing.Point(366, 80);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1634, 126);
+            this.panel1.Size = new System.Drawing.Size(1489, 975);
             this.panel1.TabIndex = 2;
             // 
             // guna2ControlBox1
@@ -137,9 +134,14 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Location = new System.Drawing.Point(34, 199);
+            this.panel2.Controls.Add(this.guna2Button6);
+            this.panel2.Controls.Add(this.guna2Button2);
+            this.panel2.Controls.Add(this.guna2Button5);
+            this.panel2.Controls.Add(this.guna2Button3);
+            this.panel2.Controls.Add(this.guna2Button4);
+            this.panel2.Location = new System.Drawing.Point(12, 188);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1852, 856);
+            this.panel2.Size = new System.Drawing.Size(348, 867);
             this.panel2.TabIndex = 8;
             // 
             // guna2Button2
@@ -154,7 +156,7 @@
             this.guna2Button2.FillColor = System.Drawing.Color.PaleVioletRed;
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(16, 14);
+            this.guna2Button2.Location = new System.Drawing.Point(78, 19);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(188, 93);
             this.guna2Button2.TabIndex = 0;
@@ -172,7 +174,7 @@
             this.guna2Button3.FillColor = System.Drawing.Color.PaleVioletRed;
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(348, 14);
+            this.guna2Button3.Location = new System.Drawing.Point(78, 187);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(188, 93);
             this.guna2Button3.TabIndex = 1;
@@ -190,7 +192,7 @@
             this.guna2Button4.FillColor = System.Drawing.Color.PaleVioletRed;
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.Location = new System.Drawing.Point(697, 14);
+            this.guna2Button4.Location = new System.Drawing.Point(78, 379);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.Size = new System.Drawing.Size(188, 93);
             this.guna2Button4.TabIndex = 2;
@@ -208,7 +210,7 @@
             this.guna2Button5.FillColor = System.Drawing.Color.PaleVioletRed;
             this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.Location = new System.Drawing.Point(1081, 14);
+            this.guna2Button5.Location = new System.Drawing.Point(78, 567);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.Size = new System.Drawing.Size(188, 93);
             this.guna2Button5.TabIndex = 3;
@@ -226,11 +228,23 @@
             this.guna2Button6.FillColor = System.Drawing.Color.PaleVioletRed;
             this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.Location = new System.Drawing.Point(1428, 14);
+            this.guna2Button6.Location = new System.Drawing.Point(78, 753);
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.Size = new System.Drawing.Size(188, 93);
             this.guna2Button6.TabIndex = 4;
             this.guna2Button6.Text = "guna2Button6";
+            // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.Image = global::QLKS.Properties.Resources.kaihouse_high_resolution_logo_transparent__1_;
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(11, 11);
+            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(349, 101);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox3.TabIndex = 9;
+            this.guna2PictureBox3.TabStop = false;
             // 
             // Dashboard
             // 
@@ -238,6 +252,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.guna2PictureBox3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.guna2ControlBox1);
@@ -249,7 +264,8 @@
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
-            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -269,5 +285,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
     }
 }
