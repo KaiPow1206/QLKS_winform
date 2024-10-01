@@ -31,17 +31,15 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.btn_huy = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_luu = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.btn_themPhong = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.btn_dangKyKhachHang = new Guna.UI2.WinForms.Guna2Button();
             this.btn_thanhToan = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
@@ -56,44 +54,6 @@
             this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2DragControl1.TargetControl = this;
             this.guna2DragControl1.UseTransparentDrag = true;
-            // 
-            // btn_huy
-            // 
-            this.btn_huy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_huy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_huy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_huy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_huy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_huy.FillColor = System.Drawing.Color.Transparent;
-            this.btn_huy.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_huy.ForeColor = System.Drawing.Color.Black;
-            this.btn_huy.Image = global::QLKS.Properties.Resources.pngwing_com;
-            this.btn_huy.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_huy.Location = new System.Drawing.Point(262, 117);
-            this.btn_huy.Name = "btn_huy";
-            this.btn_huy.Size = new System.Drawing.Size(98, 65);
-            this.btn_huy.TabIndex = 2;
-            this.btn_huy.Text = "Cancel";
-            this.btn_huy.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
-            // 
-            // btn_luu
-            // 
-            this.btn_luu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_luu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_luu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_luu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_luu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_luu.FillColor = System.Drawing.Color.Transparent;
-            this.btn_luu.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_luu.ForeColor = System.Drawing.Color.Black;
-            this.btn_luu.Image = global::QLKS.Properties.Resources.save_button;
-            this.btn_luu.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_luu.Location = new System.Drawing.Point(12, 117);
-            this.btn_luu.Name = "btn_luu";
-            this.btn_luu.Size = new System.Drawing.Size(115, 65);
-            this.btn_luu.TabIndex = 1;
-            this.btn_luu.Text = "Save Data";
-            this.btn_luu.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             // 
             // panel1
             // 
@@ -145,6 +105,24 @@
             this.panel2.Size = new System.Drawing.Size(348, 867);
             this.panel2.TabIndex = 8;
             // 
+            // guna2Button6
+            // 
+            this.guna2Button6.Animated = true;
+            this.guna2Button6.BorderRadius = 10;
+            this.guna2Button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button6.FillColor = System.Drawing.Color.PaleVioletRed;
+            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.guna2Button6.ForeColor = System.Drawing.Color.White;
+            this.guna2Button6.Location = new System.Drawing.Point(78, 753);
+            this.guna2Button6.Name = "guna2Button6";
+            this.guna2Button6.Size = new System.Drawing.Size(188, 93);
+            this.guna2Button6.TabIndex = 7;
+            this.guna2Button6.Text = "Employment";
+            // 
             // btn_themPhong
             // 
             this.btn_themPhong.Animated = true;
@@ -162,6 +140,24 @@
             this.btn_themPhong.Size = new System.Drawing.Size(188, 93);
             this.btn_themPhong.TabIndex = 3;
             this.btn_themPhong.Text = "Add Room";
+            // 
+            // guna2Button5
+            // 
+            this.guna2Button5.Animated = true;
+            this.guna2Button5.BorderRadius = 10;
+            this.guna2Button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button5.FillColor = System.Drawing.Color.PaleVioletRed;
+            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.guna2Button5.ForeColor = System.Drawing.Color.White;
+            this.guna2Button5.Location = new System.Drawing.Point(78, 567);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.Size = new System.Drawing.Size(188, 93);
+            this.guna2Button5.TabIndex = 6;
+            this.guna2Button5.Text = "Customer Details";
             // 
             // btn_dangKyKhachHang
             // 
@@ -199,42 +195,6 @@
             this.btn_thanhToan.TabIndex = 5;
             this.btn_thanhToan.Text = "Payment";
             // 
-            // guna2Button5
-            // 
-            this.guna2Button5.Animated = true;
-            this.guna2Button5.BorderRadius = 10;
-            this.guna2Button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.FillColor = System.Drawing.Color.PaleVioletRed;
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.Location = new System.Drawing.Point(78, 567);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(188, 93);
-            this.guna2Button5.TabIndex = 6;
-            this.guna2Button5.Text = "Customer Details";
-            // 
-            // guna2Button6
-            // 
-            this.guna2Button6.Animated = true;
-            this.guna2Button6.BorderRadius = 10;
-            this.guna2Button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button6.FillColor = System.Drawing.Color.PaleVioletRed;
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.Location = new System.Drawing.Point(78, 753);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(188, 93);
-            this.guna2Button6.TabIndex = 7;
-            this.guna2Button6.Text = "Employment";
-            // 
             // guna2PictureBox3
             // 
             this.guna2PictureBox3.Image = global::QLKS.Properties.Resources.kaihouse_high_resolution_logo_transparent__1_;
@@ -242,7 +202,7 @@
             this.guna2PictureBox3.Location = new System.Drawing.Point(11, 11);
             this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(349, 101);
+            this.guna2PictureBox3.Size = new System.Drawing.Size(349, 159);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox3.TabIndex = 9;
             this.guna2PictureBox3.TabStop = false;
@@ -258,8 +218,6 @@
             this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btn_luu);
-            this.Controls.Add(this.btn_huy);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Dashboard";
@@ -275,9 +233,7 @@
 
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
-        private Guna.UI2.WinForms.Guna2Button btn_huy;
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2Button btn_luu;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private System.Windows.Forms.Panel panel2;

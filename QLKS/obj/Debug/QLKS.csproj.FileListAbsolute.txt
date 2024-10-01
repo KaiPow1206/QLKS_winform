@@ -35,3 +35,4 @@ C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\obj\Debug\QLKS.csproj.CoreCompileIn
 C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\obj\Debug\QLKS.csproj.Up2Date
 C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\obj\Debug\QLKS.exe
 C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\obj\Debug\QLKS.pdb
+C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\obj\Debug\QLKS.Addroom.resources
