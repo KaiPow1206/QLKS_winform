@@ -49,7 +49,7 @@ namespace QLKS
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            if (txtAccount.Text != "anhthai" || txtPass.Text != "1206")
+            if (txtAccount.Text != "" || txtPass.Text != "")
             {
                 error.Visible = true;
                 txtPass.Clear();
@@ -70,6 +70,11 @@ namespace QLKS
         {}
 
         private void password_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
 
         }
