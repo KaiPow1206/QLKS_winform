@@ -175,6 +175,7 @@
             // 
             // btn_thanhToan
             // 
+            this.btn_thanhToan.Animated = true;
             this.btn_thanhToan.BorderRadius = 10;
             this.btn_thanhToan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_thanhToan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -192,6 +193,7 @@
             // 
             // btn_chiTietKhachHang
             // 
+            this.btn_chiTietKhachHang.Animated = true;
             this.btn_chiTietKhachHang.BorderRadius = 10;
             this.btn_chiTietKhachHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_chiTietKhachHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -209,6 +211,7 @@
             // 
             // btn_nhanVien
             // 
+            this.btn_nhanVien.Animated = true;
             this.btn_nhanVien.BorderRadius = 10;
             this.btn_nhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_nhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -226,6 +229,7 @@
             // 
             // btn_themPhong
             // 
+            this.btn_themPhong.Animated = true;
             this.btn_themPhong.BorderRadius = 10;
             this.btn_themPhong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_themPhong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
