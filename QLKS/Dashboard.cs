@@ -21,5 +21,40 @@ namespace QLKS
         {
             Application.Exit();
         }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_themPhong_Click(object sender, EventArgs e)
+        {
+            p1.Visible = true;
+            p2.Visible=false; p3.Visible=false;p4.Visible=false;p5.Visible=false;
+        }
+
+        private void btn_dangKiKhachHang_Click(object sender, EventArgs e)
+        {
+            p2.Visible = true;
+            p1.Visible=false;p3.Visible=false;p4.Visible=false;p5.Visible = false;
+        }
+
+        private void btn_thanhToan_Click(object sender, EventArgs e)
+        {
+            p3.Visible = true;
+            p1.Visible = false;p2.Visible=false;p4.Visible=false;p5.Visible = false;
+        }
+
+        private void btn_chiTietKhachHang_Click(object sender, EventArgs e)
+        {
+            p4.Visible = true;
+            p1.Visible = false; p2.Visible = false; p3.Visible = false; p5.Visible = false;
+        }
+
+        private void btn_nhanVien_Click(object sender, EventArgs e)
+        {
+            p5.Visible = true;
+            p1.Visible = false; p2.Visible = false; p3.Visible = false; p4.Visible = false;
+        }
     }
 }
