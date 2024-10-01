@@ -37,6 +37,8 @@
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -90,6 +92,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Location = new System.Drawing.Point(154, 21);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1634, 126);
@@ -131,6 +134,15 @@
             this.panel2.Size = new System.Drawing.Size(1852, 856);
             this.panel2.TabIndex = 8;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Location = new System.Drawing.Point(102, 25);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(878, 63);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -148,6 +160,7 @@
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -162,5 +175,6 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
