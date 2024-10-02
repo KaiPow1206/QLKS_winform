@@ -52,10 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Addroom.cs">
+    <Compile Include="user_control\Addroom.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Addroom.Designer.cs">
+    <Compile Include="user_control\Addroom.Designer.cs">
       <DependentUpon>Addroom.cs</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.cs">
@@ -72,7 +72,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Addroom.resx">
+    <EmbeddedResource Include="user_control\Addroom.resx">
       <DependentUpon>Addroom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
