@@ -46,11 +46,13 @@
             this.btn_chiTietKhachHang = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_dangKiKhachHang = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_thanhToan = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl3 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.uc_addroom1 = new QLKS.user_control.Uc_addroom();
+            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.p5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
@@ -70,10 +72,12 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.uc_addroom1);
             this.panel1.Location = new System.Drawing.Point(366, 80);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1489, 975);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // guna2ControlBox1
             // 
@@ -266,18 +270,6 @@
             this.btn_thanhToan.Text = "Payment";
             this.btn_thanhToan.Click += new System.EventHandler(this.btn_thanhToan_Click);
             // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.Image = global::QLKS.Properties.Resources.kaihouse_high_resolution_logo_transparent__1_;
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(11, 11);
-            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(349, 159);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox3.TabIndex = 9;
-            this.guna2PictureBox3.TabStop = false;
-            // 
             // guna2Elipse2
             // 
             this.guna2Elipse2.BorderRadius = 15;
@@ -300,6 +292,26 @@
             this.guna2Elipse3.BorderRadius = 15;
             this.guna2Elipse3.TargetControl = this.panel2;
             // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.Image = global::QLKS.Properties.Resources.kaihouse_high_resolution_logo_transparent__1_;
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(11, 11);
+            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(349, 159);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox3.TabIndex = 9;
+            this.guna2PictureBox3.TabStop = false;
+            // 
+            // uc_addroom1
+            // 
+            this.uc_addroom1.Location = new System.Drawing.Point(-2, -2);
+            this.uc_addroom1.Name = "uc_addroom1";
+            this.uc_addroom1.Size = new System.Drawing.Size(1489, 975);
+            this.uc_addroom1.TabIndex = 0;
+            this.uc_addroom1.Visible = false;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -316,6 +328,8 @@
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
+            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.p5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
@@ -347,5 +361,6 @@
         private System.Windows.Forms.Panel p3;
         private System.Windows.Forms.Panel p2;
         private System.Windows.Forms.Panel p1;
+        private user_control.Uc_addroom uc_addroom1;
     }
 }

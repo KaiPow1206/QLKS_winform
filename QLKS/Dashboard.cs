@@ -1,9 +1,11 @@
-﻿using System;
+﻿using QLKS.user_control;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -29,8 +31,11 @@ namespace QLKS
 
         private void btn_themPhong_Click(object sender, EventArgs e)
         {
+
             p1.Visible = true;
             p2.Visible=false; p3.Visible=false;p4.Visible=false;p5.Visible=false;
+            uc_addroom1.Visible = true;
+            uc_addroom1.BringToFront();
         }
 
         private void btn_dangKiKhachHang_Click(object sender, EventArgs e)
@@ -55,6 +60,16 @@ namespace QLKS
         {
             p5.Visible = true;
             p1.Visible = false; p2.Visible = false; p3.Visible = false; p4.Visible = false;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -52,12 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="user_control\Addroom.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="user_control\Addroom.Designer.cs">
-      <DependentUpon>Addroom.cs</DependentUpon>
-    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,9 +66,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="user_control\Addroom.resx">
-      <DependentUpon>Addroom.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="user_control\Uc_addroom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user_control\Uc_addroom.Designer.cs">
+      <DependentUpon>Uc_addroom.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,6 +88,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="user_control\Uc_addroom.resx">
+      <DependentUpon>Uc_addroom.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
