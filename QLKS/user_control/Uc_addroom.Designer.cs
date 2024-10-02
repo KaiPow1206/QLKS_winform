@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.btn_cancelService = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btn_more = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.txt_priceRoom = new Guna.UI2.WinForms.Guna2TextBox();
@@ -41,8 +39,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btn_cancelAddRoom = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btn_submit = new Guna.UI2.WinForms.Guna2GradientButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cb_statusClean = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -56,50 +52,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btn_cancelService = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_more = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_cancelAddRoom = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_submit = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_back = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btn_cancelService
-            // 
-            this.btn_cancelService.BorderRadius = 10;
-            this.btn_cancelService.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_cancelService.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_cancelService.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_cancelService.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_cancelService.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_cancelService.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_cancelService.ForeColor = System.Drawing.Color.White;
-            this.btn_cancelService.Image = global::QLKS.Properties.Resources.pngwing_com;
-            this.btn_cancelService.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_cancelService.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_cancelService.Location = new System.Drawing.Point(1192, 719);
-            this.btn_cancelService.Name = "btn_cancelService";
-            this.btn_cancelService.Size = new System.Drawing.Size(117, 46);
-            this.btn_cancelService.TabIndex = 20;
-            this.btn_cancelService.Text = "Cancel ";
-            this.btn_cancelService.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btn_cancelService.Click += new System.EventHandler(this.btn_cancelService_Click);
-            // 
-            // btn_more
-            // 
-            this.btn_more.Animated = true;
-            this.btn_more.BorderRadius = 10;
-            this.btn_more.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_more.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_more.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_more.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_more.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_more.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_more.ForeColor = System.Drawing.Color.White;
-            this.btn_more.Image = global::QLKS.Properties.Resources.save_button;
-            this.btn_more.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_more.Location = new System.Drawing.Point(1160, 614);
-            this.btn_more.Name = "btn_more";
-            this.btn_more.Size = new System.Drawing.Size(181, 99);
-            this.btn_more.TabIndex = 18;
-            this.btn_more.Text = "Submit Add Service";
             // 
             // guna2Elipse2
             // 
@@ -246,47 +207,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Number of room:";
             // 
-            // btn_cancelAddRoom
-            // 
-            this.btn_cancelAddRoom.Animated = true;
-            this.btn_cancelAddRoom.BorderRadius = 10;
-            this.btn_cancelAddRoom.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_cancelAddRoom.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_cancelAddRoom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_cancelAddRoom.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_cancelAddRoom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_cancelAddRoom.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_cancelAddRoom.ForeColor = System.Drawing.Color.White;
-            this.btn_cancelAddRoom.Image = global::QLKS.Properties.Resources.pngwing_com;
-            this.btn_cancelAddRoom.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_cancelAddRoom.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_cancelAddRoom.Location = new System.Drawing.Point(661, 719);
-            this.btn_cancelAddRoom.Name = "btn_cancelAddRoom";
-            this.btn_cancelAddRoom.Size = new System.Drawing.Size(117, 46);
-            this.btn_cancelAddRoom.TabIndex = 19;
-            this.btn_cancelAddRoom.Text = "Cancel ";
-            this.btn_cancelAddRoom.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btn_cancelAddRoom.Click += new System.EventHandler(this.btn_cancelAddRoom_Click);
-            // 
-            // btn_submit
-            // 
-            this.btn_submit.Animated = true;
-            this.btn_submit.BorderRadius = 10;
-            this.btn_submit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_submit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_submit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_submit.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_submit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_submit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_submit.ForeColor = System.Drawing.Color.White;
-            this.btn_submit.Image = global::QLKS.Properties.Resources.save_button;
-            this.btn_submit.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_submit.Location = new System.Drawing.Point(626, 614);
-            this.btn_submit.Name = "btn_submit";
-            this.btn_submit.Size = new System.Drawing.Size(181, 99);
-            this.btn_submit.TabIndex = 17;
-            this.btn_submit.Text = "Submit Add Room";
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -426,7 +346,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(10, 35);
+            this.label1.Location = new System.Drawing.Point(10, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(335, 31);
             this.label1.TabIndex = 13;
@@ -460,10 +380,111 @@
             this.guna2TextBox3.TabIndex = 0;
             this.guna2TextBox3.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
             // 
+            // btn_cancelService
+            // 
+            this.btn_cancelService.BorderRadius = 10;
+            this.btn_cancelService.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_cancelService.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_cancelService.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_cancelService.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_cancelService.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_cancelService.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_cancelService.ForeColor = System.Drawing.Color.White;
+            this.btn_cancelService.Image = global::QLKS.Properties.Resources.pngwing_com;
+            this.btn_cancelService.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_cancelService.ImageSize = new System.Drawing.Size(40, 40);
+            this.btn_cancelService.Location = new System.Drawing.Point(1192, 719);
+            this.btn_cancelService.Name = "btn_cancelService";
+            this.btn_cancelService.Size = new System.Drawing.Size(117, 46);
+            this.btn_cancelService.TabIndex = 20;
+            this.btn_cancelService.Text = "Cancel ";
+            this.btn_cancelService.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_cancelService.Click += new System.EventHandler(this.btn_cancelService_Click);
+            // 
+            // btn_more
+            // 
+            this.btn_more.Animated = true;
+            this.btn_more.BorderRadius = 10;
+            this.btn_more.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_more.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_more.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_more.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_more.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_more.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_more.ForeColor = System.Drawing.Color.White;
+            this.btn_more.Image = global::QLKS.Properties.Resources.save_button;
+            this.btn_more.ImageSize = new System.Drawing.Size(40, 40);
+            this.btn_more.Location = new System.Drawing.Point(1160, 614);
+            this.btn_more.Name = "btn_more";
+            this.btn_more.Size = new System.Drawing.Size(181, 99);
+            this.btn_more.TabIndex = 18;
+            this.btn_more.Text = "Submit Add Service";
+            // 
+            // btn_cancelAddRoom
+            // 
+            this.btn_cancelAddRoom.Animated = true;
+            this.btn_cancelAddRoom.BorderRadius = 10;
+            this.btn_cancelAddRoom.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_cancelAddRoom.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_cancelAddRoom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_cancelAddRoom.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_cancelAddRoom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_cancelAddRoom.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_cancelAddRoom.ForeColor = System.Drawing.Color.White;
+            this.btn_cancelAddRoom.Image = global::QLKS.Properties.Resources.pngwing_com;
+            this.btn_cancelAddRoom.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_cancelAddRoom.ImageSize = new System.Drawing.Size(40, 40);
+            this.btn_cancelAddRoom.Location = new System.Drawing.Point(661, 719);
+            this.btn_cancelAddRoom.Name = "btn_cancelAddRoom";
+            this.btn_cancelAddRoom.Size = new System.Drawing.Size(117, 46);
+            this.btn_cancelAddRoom.TabIndex = 19;
+            this.btn_cancelAddRoom.Text = "Cancel ";
+            this.btn_cancelAddRoom.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_cancelAddRoom.Click += new System.EventHandler(this.btn_cancelAddRoom_Click);
+            // 
+            // btn_submit
+            // 
+            this.btn_submit.Animated = true;
+            this.btn_submit.BorderRadius = 10;
+            this.btn_submit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_submit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_submit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_submit.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_submit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_submit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_submit.ForeColor = System.Drawing.Color.White;
+            this.btn_submit.Image = global::QLKS.Properties.Resources.save_button;
+            this.btn_submit.ImageSize = new System.Drawing.Size(40, 40);
+            this.btn_submit.Location = new System.Drawing.Point(626, 614);
+            this.btn_submit.Name = "btn_submit";
+            this.btn_submit.Size = new System.Drawing.Size(181, 99);
+            this.btn_submit.TabIndex = 17;
+            this.btn_submit.Text = "Submit Add Room";
+            // 
+            // btn_back
+            // 
+            this.btn_back.Animated = true;
+            this.btn_back.BorderRadius = 10;
+            this.btn_back.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_back.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_back.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_back.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_back.FillColor = System.Drawing.Color.Transparent;
+            this.btn_back.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_back.ForeColor = System.Drawing.Color.White;
+            this.btn_back.Image = global::QLKS.Properties.Resources.back;
+            this.btn_back.ImageSize = new System.Drawing.Size(50, 50);
+            this.btn_back.Location = new System.Drawing.Point(351, 3);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(71, 60);
+            this.btn_back.TabIndex = 23;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
             // Uc_addroom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.guna2TextBox3);
             this.Controls.Add(this.btn_cancelService);
             this.Controls.Add(this.btn_more);
@@ -514,5 +535,6 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2Button btn_back;
     }
 }

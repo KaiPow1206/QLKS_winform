@@ -72,6 +72,30 @@
     <Compile Include="user_control\Uc_addroom.Designer.cs">
       <DependentUpon>Uc_addroom.cs</DependentUpon>
     </Compile>
+    <Compile Include="user_control\Uc_customerdetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user_control\Uc_customerdetails.Designer.cs">
+      <DependentUpon>Uc_customerdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_control\Uc_employment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user_control\Uc_employment.Designer.cs">
+      <DependentUpon>Uc_employment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_control\Uc_payment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user_control\Uc_payment.Designer.cs">
+      <DependentUpon>Uc_payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_control\Uc_registercustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user_control\Uc_registercustomer.Designer.cs">
+      <DependentUpon>Uc_registercustomer.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +114,18 @@
     </Compile>
     <EmbeddedResource Include="user_control\Uc_addroom.resx">
       <DependentUpon>Uc_addroom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_control\Uc_customerdetails.resx">
+      <DependentUpon>Uc_customerdetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_control\Uc_employment.resx">
+      <DependentUpon>Uc_employment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_control\Uc_payment.resx">
+      <DependentUpon>Uc_payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_control\Uc_registercustomer.resx">
+      <DependentUpon>Uc_registercustomer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -137,6 +173,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\save-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-graphy-back-button-miscellaneous-photography-trademark-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

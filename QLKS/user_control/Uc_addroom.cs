@@ -40,5 +40,13 @@ namespace QLKS.user_control
         private void txt_priceRoom_TextChanged(object sender, EventArgs e)
         {
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show(); // Hiển thị form Dashboard
+            this.Hide();      // Ẩn form hiện tại (form chứa btn_back)
+        }
+
     }
 }

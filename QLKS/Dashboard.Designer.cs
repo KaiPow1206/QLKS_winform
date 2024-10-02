@@ -36,8 +36,6 @@
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.p5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.p4 = new System.Windows.Forms.Panel();
             this.p3 = new System.Windows.Forms.Panel();
             this.p2 = new System.Windows.Forms.Panel();
             this.p1 = new System.Windows.Forms.Panel();
@@ -51,10 +49,10 @@
             this.guna2DragControl3 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.p4 = new System.Windows.Forms.Panel();
             this.uc_addroom1 = new QLKS.user_control.Uc_addroom();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.p5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,35 +125,16 @@
             // 
             // p5
             // 
-            this.p5.BackColor = System.Drawing.Color.Silver;
-            this.p5.Controls.Add(this.panel6);
+            this.p5.BackColor = System.Drawing.Color.DarkGray;
             this.p5.Location = new System.Drawing.Point(79, 848);
             this.p5.Name = "p5";
             this.p5.Size = new System.Drawing.Size(186, 8);
             this.p5.TabIndex = 8;
             this.p5.Visible = false;
             // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Silver;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(186, 8);
-            this.panel6.TabIndex = 7;
-            this.panel6.Visible = false;
-            // 
-            // p4
-            // 
-            this.p4.BackColor = System.Drawing.Color.Silver;
-            this.p4.Location = new System.Drawing.Point(79, 669);
-            this.p4.Name = "p4";
-            this.p4.Size = new System.Drawing.Size(186, 8);
-            this.p4.TabIndex = 7;
-            this.p4.Visible = false;
-            // 
             // p3
             // 
-            this.p3.BackColor = System.Drawing.Color.Silver;
+            this.p3.BackColor = System.Drawing.Color.DarkGray;
             this.p3.Location = new System.Drawing.Point(79, 479);
             this.p3.Name = "p3";
             this.p3.Size = new System.Drawing.Size(186, 8);
@@ -164,7 +143,7 @@
             // 
             // p2
             // 
-            this.p2.BackColor = System.Drawing.Color.Silver;
+            this.p2.BackColor = System.Drawing.Color.DarkGray;
             this.p2.Location = new System.Drawing.Point(79, 290);
             this.p2.Name = "p2";
             this.p2.Size = new System.Drawing.Size(186, 8);
@@ -173,7 +152,7 @@
             // 
             // p1
             // 
-            this.p1.BackColor = System.Drawing.Color.Silver;
+            this.p1.BackColor = System.Drawing.Color.DarkGray;
             this.p1.Location = new System.Drawing.Point(77, 111);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(186, 8);
@@ -296,13 +275,22 @@
             // 
             this.guna2PictureBox3.Image = global::QLKS.Properties.Resources.kaihouse_high_resolution_logo_transparent__1_;
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(11, 11);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(12, 11);
             this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.Size = new System.Drawing.Size(349, 159);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox3.TabIndex = 9;
+            this.guna2PictureBox3.TabIndex = 10;
             this.guna2PictureBox3.TabStop = false;
+            // 
+            // p4
+            // 
+            this.p4.BackColor = System.Drawing.Color.DarkGray;
+            this.p4.Location = new System.Drawing.Point(79, 669);
+            this.p4.Name = "p4";
+            this.p4.Size = new System.Drawing.Size(186, 8);
+            this.p4.TabIndex = 7;
+            this.p4.Visible = false;
             // 
             // uc_addroom1
             // 
@@ -331,7 +319,6 @@
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.p5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.ResumeLayout(false);
 
@@ -345,7 +332,6 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private System.Windows.Forms.Panel panel2;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl3;
@@ -356,11 +342,11 @@
         private Guna.UI2.WinForms.Guna2GradientButton btn_dangKiKhachHang;
         private Guna.UI2.WinForms.Guna2GradientButton btn_themPhong;
         private System.Windows.Forms.Panel p5;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel p4;
         private System.Windows.Forms.Panel p3;
         private System.Windows.Forms.Panel p2;
         private System.Windows.Forms.Panel p1;
         private user_control.Uc_addroom uc_addroom1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
+        private System.Windows.Forms.Panel p4;
     }
 }

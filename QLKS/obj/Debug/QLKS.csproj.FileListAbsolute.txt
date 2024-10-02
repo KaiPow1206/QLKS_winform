@@ -36,3 +36,7 @@ C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\obj\Debug\QLKS.csproj.Up2Date
 C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\obj\Debug\QLKS.exe
 C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\obj\Debug\QLKS.pdb
 C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\obj\Debug\QLKS.user_control.Uc_addroom.resources
+C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\obj\Debug\QLKS.user_control.Uc_customerdetails.resources
+C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\obj\Debug\QLKS.user_control.Uc_employment.resources
+C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\obj\Debug\QLKS.user_control.Uc_payment.resources
+C:\anhthai\winform C#\QLKS\QLKS_winform\QLKS\obj\Debug\QLKS.user_control.Uc_registercustomer.resources

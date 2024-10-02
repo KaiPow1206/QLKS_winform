@@ -103,6 +103,16 @@ namespace QLKS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap back {
+            get {
+                object obj = ResourceManager.GetObject("back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kaihouse_high_resolution_logo_transparent__1_ {
             get {
                 object obj = ResourceManager.GetObject("kaihouse_high_resolution_logo_transparent__1_", resourceCulture);

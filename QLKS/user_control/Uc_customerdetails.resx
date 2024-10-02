@@ -117,29 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kaihouse_high_resolution_logo_transparent__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kaihouse-high-resolution-logo-transparent (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pngwing_com" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngwing.com.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="save_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_61f75ea9a680def2ed1c6929fe75aeee" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\61f75ea9a680def2ed1c6929fe75aeee.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_7d904437c95e7c802bfd7d7317a0353d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\7d904437c95e7c802bfd7d7317a0353d.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_87d00d63f8caabd4e701f7aa21881442" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\87d00d63f8caabd4e701f7aa21881442.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_94e0e76b7e88d2002e813d819158994c" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\94e0e76b7e88d2002e813d819158994c.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>
