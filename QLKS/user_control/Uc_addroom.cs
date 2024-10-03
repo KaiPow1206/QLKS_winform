@@ -14,6 +14,7 @@ namespace QLKS.user_control
     {
         func fn =new func();
         string query;
+
         public Uc_addroom()
         {
             InitializeComponent();
@@ -55,9 +56,9 @@ namespace QLKS.user_control
 
         private void Uc_addroom_Load(object sender, EventArgs e)
         {
-            query = "select * from rooms";
-            DataSet ds = fn.getDaTa(query);
-            DataGridView1.DataSource= ds.Tables[0];
+            //query = "select * from rooms";
+            //DataSet ds = fn.getDaTa(query);
+            //DataGridView1.DataSource= ds.Tables[0];
         }
 
         private void btn_submit_Click(object sender, EventArgs e)
