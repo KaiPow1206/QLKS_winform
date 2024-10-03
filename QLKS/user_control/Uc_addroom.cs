@@ -12,6 +12,8 @@ namespace QLKS.user_control
 {
     public partial class Uc_addroom : UserControl
     {
+        func fn =new func();
+        string query;
         public Uc_addroom()
         {
             InitializeComponent();
@@ -28,6 +30,9 @@ namespace QLKS.user_control
            txt_priceRoom.Clear();
            cb_typeOfBed.Items.Clear();
            cb_typeOfRoom.Items.Clear();
+           cb_statusClean.Items.Clear();
+           cb_service.Items.Clear();
+           cb_statusRoom.Items.Clear();
         }
 
         private void btn_cancelService_Click(object sender, EventArgs e)
@@ -48,5 +53,16 @@ namespace QLKS.user_control
             this.Hide();      // Ẩn form hiện tại (form chứa btn_back)
         }
 
+        private void Uc_addroom_Load(object sender, EventArgs e)
+        {
+            query = "select * from rooms";
+            DataSet ds = fn.getDaTa(query);
+            DataGridView1.DataSource= ds.Tables[0];
+        }
+
+        private void btn_submit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

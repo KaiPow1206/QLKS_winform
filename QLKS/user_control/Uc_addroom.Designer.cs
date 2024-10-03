@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.txt_priceRoom = new Guna.UI2.WinForms.Guna2TextBox();
@@ -39,7 +42,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cb_statusClean = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -52,14 +54,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btn_cancelService = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btn_more = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_cancelAddRoom = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_submit = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_back = new Guna.UI2.WinForms.Guna2Button();
+            this.DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse2
@@ -207,14 +208,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Number of room:";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 133);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(431, 632);
-            this.dataGridView1.TabIndex = 16;
-            // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -244,7 +237,6 @@
             this.cb_statusClean.ItemHeight = 30;
             this.cb_statusClean.Items.AddRange(new object[] {
             "Not Clean",
-            "Ready",
             "Cleaning"});
             this.cb_statusClean.Location = new System.Drawing.Point(18, 395);
             this.cb_statusClean.Name = "cb_statusClean";
@@ -274,8 +266,7 @@
             this.cb_statusRoom.ItemHeight = 30;
             this.cb_statusRoom.Items.AddRange(new object[] {
             "Full",
-            "Deposit",
-            "Chill"});
+            "Deposit"});
             this.cb_statusRoom.Location = new System.Drawing.Point(18, 279);
             this.cb_statusRoom.Name = "cb_statusRoom";
             this.cb_statusRoom.Size = new System.Drawing.Size(440, 36);
@@ -380,46 +371,6 @@
             this.guna2TextBox3.TabIndex = 0;
             this.guna2TextBox3.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
             // 
-            // btn_cancelService
-            // 
-            this.btn_cancelService.BorderRadius = 10;
-            this.btn_cancelService.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_cancelService.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_cancelService.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_cancelService.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_cancelService.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_cancelService.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_cancelService.ForeColor = System.Drawing.Color.White;
-            this.btn_cancelService.Image = global::QLKS.Properties.Resources.pngwing_com;
-            this.btn_cancelService.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_cancelService.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_cancelService.Location = new System.Drawing.Point(1192, 719);
-            this.btn_cancelService.Name = "btn_cancelService";
-            this.btn_cancelService.Size = new System.Drawing.Size(117, 46);
-            this.btn_cancelService.TabIndex = 20;
-            this.btn_cancelService.Text = "Cancel ";
-            this.btn_cancelService.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btn_cancelService.Click += new System.EventHandler(this.btn_cancelService_Click);
-            // 
-            // btn_more
-            // 
-            this.btn_more.Animated = true;
-            this.btn_more.BorderRadius = 10;
-            this.btn_more.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_more.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_more.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_more.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_more.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_more.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_more.ForeColor = System.Drawing.Color.White;
-            this.btn_more.Image = global::QLKS.Properties.Resources.save_button;
-            this.btn_more.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_more.Location = new System.Drawing.Point(1160, 614);
-            this.btn_more.Name = "btn_more";
-            this.btn_more.Size = new System.Drawing.Size(181, 99);
-            this.btn_more.TabIndex = 18;
-            this.btn_more.Text = "Submit Add Service";
-            // 
             // btn_cancelAddRoom
             // 
             this.btn_cancelAddRoom.Animated = true;
@@ -434,7 +385,7 @@
             this.btn_cancelAddRoom.Image = global::QLKS.Properties.Resources.pngwing_com;
             this.btn_cancelAddRoom.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_cancelAddRoom.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_cancelAddRoom.Location = new System.Drawing.Point(661, 719);
+            this.btn_cancelAddRoom.Location = new System.Drawing.Point(923, 719);
             this.btn_cancelAddRoom.Name = "btn_cancelAddRoom";
             this.btn_cancelAddRoom.Size = new System.Drawing.Size(117, 46);
             this.btn_cancelAddRoom.TabIndex = 19;
@@ -455,11 +406,12 @@
             this.btn_submit.ForeColor = System.Drawing.Color.White;
             this.btn_submit.Image = global::QLKS.Properties.Resources.save_button;
             this.btn_submit.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_submit.Location = new System.Drawing.Point(626, 614);
+            this.btn_submit.Location = new System.Drawing.Point(888, 614);
             this.btn_submit.Name = "btn_submit";
             this.btn_submit.Size = new System.Drawing.Size(181, 99);
             this.btn_submit.TabIndex = 17;
             this.btn_submit.Text = "Submit Add Room";
+            this.btn_submit.Click += new System.EventHandler(this.btn_submit_Click);
             // 
             // btn_back
             // 
@@ -480,36 +432,81 @@
             this.btn_back.TabIndex = 23;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
+            // DataGridView1
+            // 
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            this.DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DataGridView1.Location = new System.Drawing.Point(16, 133);
+            this.DataGridView1.Name = "DataGridView1";
+            this.DataGridView1.RowHeadersVisible = false;
+            this.DataGridView1.Size = new System.Drawing.Size(431, 632);
+            this.DataGridView1.TabIndex = 24;
+            this.DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
+            this.DataGridView1.ThemeStyle.ReadOnly = false;
+            this.DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.DataGridView1.ThemeStyle.RowsStyle.Height = 22;
+            this.DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
             // Uc_addroom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.DataGridView1);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.guna2TextBox3);
-            this.Controls.Add(this.btn_cancelService);
-            this.Controls.Add(this.btn_more);
             this.Controls.Add(this.btn_cancelAddRoom);
             this.Controls.Add(this.btn_submit);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "Uc_addroom";
             this.Size = new System.Drawing.Size(1489, 975);
+            this.Load += new System.EventHandler(this.Uc_addroom_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2GradientButton btn_cancelService;
-        private Guna.UI2.WinForms.Guna2GradientButton btn_more;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2TextBox txt_priceRoom;
@@ -522,7 +519,6 @@
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2GradientButton btn_cancelAddRoom;
         private Guna.UI2.WinForms.Guna2GradientButton btn_submit;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2ComboBox cb_statusClean;
         private System.Windows.Forms.Label label7;
@@ -536,5 +532,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
         private Guna.UI2.WinForms.Guna2Button btn_back;
+        private Guna.UI2.WinForms.Guna2DataGridView DataGridView1;
     }
 }
