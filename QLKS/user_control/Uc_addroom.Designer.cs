@@ -52,7 +52,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.btn_cancelAddRoom = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_submit = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_back = new Guna.UI2.WinForms.Guna2Button();
@@ -100,9 +99,10 @@
             this.txt_priceRoom.Location = new System.Drawing.Point(29, 415);
             this.txt_priceRoom.Name = "txt_priceRoom";
             this.txt_priceRoom.PasswordChar = '\0';
-            this.txt_priceRoom.PlaceholderText = "";
+            this.txt_priceRoom.PlaceholderText = "Enter Price Of Room..";
             this.txt_priceRoom.SelectedText = "";
             this.txt_priceRoom.Size = new System.Drawing.Size(440, 36);
+            this.txt_priceRoom.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txt_priceRoom.TabIndex = 13;
             this.txt_priceRoom.TextChanged += new System.EventHandler(this.txt_priceRoom_TextChanged);
             // 
@@ -173,9 +173,10 @@
             this.txt_numberRoom.Location = new System.Drawing.Point(29, 67);
             this.txt_numberRoom.Name = "txt_numberRoom";
             this.txt_numberRoom.PasswordChar = '\0';
-            this.txt_numberRoom.PlaceholderText = "";
+            this.txt_numberRoom.PlaceholderText = "Enter Number Of Room..";
             this.txt_numberRoom.SelectedText = "";
             this.txt_numberRoom.Size = new System.Drawing.Size(440, 36);
+            this.txt_numberRoom.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txt_numberRoom.TabIndex = 4;
             // 
             // label4
@@ -343,10 +344,7 @@
             this.label1.Size = new System.Drawing.Size(335, 31);
             this.label1.TabIndex = 13;
             this.label1.Text = "Add Room For KaiHouse";
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 15;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btn_cancelAddRoom
             // 
@@ -523,7 +521,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Button btn_back;
         private Guna.UI2.WinForms.Guna2DataGridView DataGridView1;
         private System.Windows.Forms.Button button1;

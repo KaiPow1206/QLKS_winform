@@ -98,5 +98,10 @@ namespace QLKS.user_control
         {
             Uc_addroom_Load(this, null);
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

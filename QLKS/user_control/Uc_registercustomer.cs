@@ -16,5 +16,12 @@ namespace QLKS.user_control
         {
             InitializeComponent();
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            //Dashboard dashboard = new Dashboard();
+            //dashboard.Show();
+            //this.Hide();
+        }
     }
 }
