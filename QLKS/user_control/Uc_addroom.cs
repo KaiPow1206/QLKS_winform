@@ -56,38 +56,42 @@ namespace QLKS.user_control
 
         private void btn_submit_Click(object sender, EventArgs e)
         {
-            if (txt_numberRoom.Text != "" && cb_typeOfRoom.Text != "" && cb_typeOfBed.Text != "" && txt_priceRoom.Text != "" && cb_service.Text != "")
+
+            try
             {
-                String roomnumber = txt_numberRoom.Text;
-                String roomtype = cb_typeOfRoom.Text;
-                String bedtype = cb_typeOfBed.Text;
-                Int64 priceroom = Int64.Parse(txt_priceRoom.Text);
-                String service = cb_service.Text;
-
-                if (cb_statusClean.Text != "" && cb_statusRoom.Text != "")
+                if (txt_numberRoom.Text != "" && cb_typeOfRoom.Text != "" && cb_typeOfBed.Text != "" && txt_priceRoom.Text != "" && cb_service.Text != "")
                 {
-                    String statusroom = cb_statusRoom.Text;
-                    String statusclean = cb_statusClean.Text;
+                    Int64 roomnumber = Int64.Parse(txt_numberRoom.Text);
+                    String roomtype = cb_typeOfRoom.Text;
+                    String bedtype = cb_typeOfBed.Text;
+                    Int64 priceroom = Int64.Parse(txt_priceRoom.Text);
+                    String service = cb_service.Text;
 
-                    query = "INSERT INTO rooms(roomNum, roomType, bed, price, service, statusRoom, statusClean) " +
-                            "VALUES('" + roomnumber + "','" + roomtype + "','" + bedtype + "','" + priceroom + "','" + service + "','" + statusroom + "','" + statusclean + "')";
+                    if (cb_statusClean.Text != "" && cb_statusRoom.Text != "")
+                    {
+                        String statusroom = cb_statusRoom.Text;
+                        String statusclean = cb_statusClean.Text;
+
+                        query = "INSERT INTO rooms(roomNum, roomType, bed, price, service, statusRoom, statusClean) " +
+                                "VALUES('" + roomnumber + "','" + roomtype + "','" + bedtype + "','" + priceroom + "','" + service + "','" + statusroom + "','" + statusclean + "')";
+                    }
+                    else
+                    {
+                        query = "INSERT INTO rooms(roomNum, roomType, bed, price, service) " +
+                                "VALUES('" + roomnumber + "','" + roomtype + "','" + bedtype + "','" + priceroom + "','" + service + "')";
+                    }
+
+                    fn.setData(query, "Add Room Successful!");
+                    Uc_addroom_Load(this, null);
                 }
                 else
                 {
-                    query = "INSERT INTO rooms(roomNum, roomType, bed, price, service) " +
-                            "VALUES('" + roomnumber + "','" + roomtype + "','" + bedtype + "','" + priceroom + "','" + service + "')";
+                    MessageBox.Show("Please complete information", "Warning!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-
-                fn.setData(query, "Add Room Successful!");
-                Uc_addroom_Load(this, null);
             }
-            else
-            {
-                MessageBox.Show("Please complete information", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            catch(Exception) {
+                MessageBox.Show("Something Wrong Check Information(Room Number and Price must be a number)","Error!!",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
-
         }
 
         private void Uc_addroom_Enter(object sender, EventArgs e)
