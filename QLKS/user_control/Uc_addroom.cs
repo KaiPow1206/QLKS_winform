@@ -29,18 +29,11 @@ namespace QLKS.user_control
         {
            txt_numberRoom.Clear();
            txt_priceRoom.Clear();
-           cb_typeOfBed.Items.Clear();
-           cb_typeOfRoom.Items.Clear();
-           cb_statusClean.Items.Clear();
-           cb_service.Items.Clear();
-           cb_statusRoom.Items.Clear();
-        }
-
-        private void btn_cancelService_Click(object sender, EventArgs e)
-        {
-            cb_statusClean.Items.Clear();
-            cb_service.Items.Clear();
-            cb_statusRoom.Items.Clear();
+           cb_typeOfBed.SelectedIndex =-1;
+           cb_typeOfRoom.SelectedIndex = -1;
+           cb_statusClean.SelectedIndex = -1;
+           cb_service.SelectedIndex = -1;
+           cb_statusRoom.SelectedIndex = -1;
         }
 
         private void txt_priceRoom_TextChanged(object sender, EventArgs e)
@@ -50,20 +43,56 @@ namespace QLKS.user_control
         private void btn_back_Click(object sender, EventArgs e)
         {
             Dashboard dashboard = new Dashboard();
-            dashboard.Show(); // Hiển thị form Dashboard
-            this.Hide();      // Ẩn form hiện tại (form chứa btn_back)
+            dashboard.Show();
+            this.Hide();      
         }
 
         private void Uc_addroom_Load(object sender, EventArgs e)
         {
-            //query = "select * from rooms";
-            //DataSet ds = fn.getDaTa(query);
-            //DataGridView1.DataSource= ds.Tables[0];
+            query = "select * from rooms";
+            DataSet ds = fn.getDaTa(query);
+            DataGridView1.DataSource = ds.Tables[0];
         }
 
         private void btn_submit_Click(object sender, EventArgs e)
         {
+            if (txt_numberRoom.Text != "" && cb_typeOfRoom.Text != "" && cb_typeOfBed.Text != "" && txt_priceRoom.Text != "" && cb_service.Text != "")
+            {
+                String roomnumber = txt_numberRoom.Text;
+                String roomtype = cb_typeOfRoom.Text;
+                String bedtype = cb_typeOfBed.Text;
+                Int64 priceroom = Int64.Parse(txt_priceRoom.Text);
+                String service = cb_service.Text;
 
+                if (cb_statusClean.Text != "" && cb_statusRoom.Text != "")
+                {
+                    String statusroom = cb_statusRoom.Text;
+                    String statusclean = cb_statusClean.Text;
+
+                    query = "INSERT INTO rooms(roomNum, roomType, bed, price, service, statusRoom, statusClean) " +
+                            "VALUES('" + roomnumber + "','" + roomtype + "','" + bedtype + "','" + priceroom + "','" + service + "','" + statusroom + "','" + statusclean + "')";
+                }
+                else
+                {
+                    query = "INSERT INTO rooms(roomNum, roomType, bed, price, service) " +
+                            "VALUES('" + roomnumber + "','" + roomtype + "','" + bedtype + "','" + priceroom + "','" + service + "')";
+                }
+
+                fn.setData(query, "Add Room Successful!");
+                Uc_addroom_Load(this, null);
+            }
+            else
+            {
+                MessageBox.Show("Please complete information", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+
+
+        }
+
+        private void Uc_addroom_Enter(object sender, EventArgs e)
+        {
+            Uc_addroom_Load(this, null);
         }
     }
 }

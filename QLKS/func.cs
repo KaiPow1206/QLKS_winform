@@ -23,11 +23,15 @@ namespace QLKS
             SqlConnection conn = getConnection();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
-            cmd.CommandText= query;
+            cmd.CommandText = query;
+
             SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+
             DataSet ds = new DataSet();
             da.Fill(ds);
             return ds;
+
         }
 
         public void setData(string query, string mess)
