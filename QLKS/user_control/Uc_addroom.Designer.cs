@@ -103,7 +103,7 @@
             this.txt_priceRoom.SelectedText = "";
             this.txt_priceRoom.Size = new System.Drawing.Size(440, 36);
             this.txt_priceRoom.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_priceRoom.TabIndex = 13;
+            this.txt_priceRoom.TabIndex = 4;
             this.txt_priceRoom.TextChanged += new System.EventHandler(this.txt_priceRoom_TextChanged);
             // 
             // cb_typeOfBed
@@ -125,7 +125,7 @@
             this.cb_typeOfBed.Location = new System.Drawing.Point(29, 295);
             this.cb_typeOfBed.Name = "cb_typeOfBed";
             this.cb_typeOfBed.Size = new System.Drawing.Size(440, 36);
-            this.cb_typeOfBed.TabIndex = 12;
+            this.cb_typeOfBed.TabIndex = 3;
             // 
             // cb_typeOfRoom
             // 
@@ -145,7 +145,7 @@
             this.cb_typeOfRoom.Location = new System.Drawing.Point(29, 182);
             this.cb_typeOfRoom.Name = "cb_typeOfRoom";
             this.cb_typeOfRoom.Size = new System.Drawing.Size(440, 36);
-            this.cb_typeOfRoom.TabIndex = 11;
+            this.cb_typeOfRoom.TabIndex = 2;
             // 
             // label5
             // 
@@ -242,7 +242,7 @@
             this.cb_statusClean.Location = new System.Drawing.Point(18, 395);
             this.cb_statusClean.Name = "cb_statusClean";
             this.cb_statusClean.Size = new System.Drawing.Size(440, 36);
-            this.cb_statusClean.TabIndex = 18;
+            this.cb_statusClean.TabIndex = 7;
             // 
             // label7
             // 
@@ -271,7 +271,7 @@
             this.cb_statusRoom.Location = new System.Drawing.Point(18, 279);
             this.cb_statusRoom.Name = "cb_statusRoom";
             this.cb_statusRoom.Size = new System.Drawing.Size(440, 36);
-            this.cb_statusRoom.TabIndex = 16;
+            this.cb_statusRoom.TabIndex = 6;
             // 
             // label6
             // 
@@ -301,7 +301,7 @@
             this.cb_service.Location = new System.Drawing.Point(18, 159);
             this.cb_service.Name = "cb_service";
             this.cb_service.Size = new System.Drawing.Size(440, 36);
-            this.cb_service.TabIndex = 14;
+            this.cb_service.TabIndex = 5;
             // 
             // label10
             // 
@@ -363,7 +363,7 @@
             this.btn_cancelAddRoom.Location = new System.Drawing.Point(557, 809);
             this.btn_cancelAddRoom.Name = "btn_cancelAddRoom";
             this.btn_cancelAddRoom.Size = new System.Drawing.Size(181, 99);
-            this.btn_cancelAddRoom.TabIndex = 19;
+            this.btn_cancelAddRoom.TabIndex = 9;
             this.btn_cancelAddRoom.Text = "Clean Infromation";
             this.btn_cancelAddRoom.Click += new System.EventHandler(this.btn_cancelAddRoom_Click);
             // 
@@ -384,7 +384,7 @@
             this.btn_submit.Location = new System.Drawing.Point(759, 809);
             this.btn_submit.Name = "btn_submit";
             this.btn_submit.Size = new System.Drawing.Size(181, 99);
-            this.btn_submit.TabIndex = 17;
+            this.btn_submit.TabIndex = 8;
             this.btn_submit.Text = "Submit Add Room";
             this.btn_submit.Click += new System.EventHandler(this.btn_submit_Click);
             // 
@@ -405,7 +405,7 @@
             this.btn_back.Location = new System.Drawing.Point(351, 3);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(71, 60);
-            this.btn_back.TabIndex = 23;
+            this.btn_back.TabIndex = 10;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // DataGridView1

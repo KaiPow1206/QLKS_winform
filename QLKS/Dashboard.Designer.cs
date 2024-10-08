@@ -32,10 +32,12 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.uc_addroom1 = new QLKS.user_control.Uc_addroom();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.p5 = new System.Windows.Forms.Panel();
+            this.p4 = new System.Windows.Forms.Panel();
             this.p3 = new System.Windows.Forms.Panel();
             this.p2 = new System.Windows.Forms.Panel();
             this.p1 = new System.Windows.Forms.Panel();
@@ -49,8 +51,7 @@
             this.guna2DragControl3 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.p4 = new System.Windows.Forms.Panel();
-            this.uc_addroom1 = new QLKS.user_control.Uc_addroom();
+            this.uc_registercustomer1 = new QLKS.user_control.Uc_registercustomer();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
@@ -70,12 +71,21 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.uc_registercustomer1);
             this.panel1.Controls.Add(this.uc_addroom1);
             this.panel1.Location = new System.Drawing.Point(366, 80);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1489, 975);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // uc_addroom1
+            // 
+            this.uc_addroom1.Location = new System.Drawing.Point(-2, -2);
+            this.uc_addroom1.Name = "uc_addroom1";
+            this.uc_addroom1.Size = new System.Drawing.Size(1489, 975);
+            this.uc_addroom1.TabIndex = 0;
+            this.uc_addroom1.Visible = false;
             // 
             // guna2ControlBox1
             // 
@@ -131,6 +141,15 @@
             this.p5.Size = new System.Drawing.Size(186, 8);
             this.p5.TabIndex = 8;
             this.p5.Visible = false;
+            // 
+            // p4
+            // 
+            this.p4.BackColor = System.Drawing.Color.DarkGray;
+            this.p4.Location = new System.Drawing.Point(79, 669);
+            this.p4.Name = "p4";
+            this.p4.Size = new System.Drawing.Size(186, 8);
+            this.p4.TabIndex = 7;
+            this.p4.Visible = false;
             // 
             // p3
             // 
@@ -283,22 +302,13 @@
             this.guna2PictureBox3.TabIndex = 10;
             this.guna2PictureBox3.TabStop = false;
             // 
-            // p4
+            // uc_registercustomer1
             // 
-            this.p4.BackColor = System.Drawing.Color.DarkGray;
-            this.p4.Location = new System.Drawing.Point(79, 669);
-            this.p4.Name = "p4";
-            this.p4.Size = new System.Drawing.Size(186, 8);
-            this.p4.TabIndex = 7;
-            this.p4.Visible = false;
-            // 
-            // uc_addroom1
-            // 
-            this.uc_addroom1.Location = new System.Drawing.Point(-2, -2);
-            this.uc_addroom1.Name = "uc_addroom1";
-            this.uc_addroom1.Size = new System.Drawing.Size(1489, 975);
-            this.uc_addroom1.TabIndex = 0;
-            this.uc_addroom1.Visible = false;
+            this.uc_registercustomer1.Location = new System.Drawing.Point(-2, -2);
+            this.uc_registercustomer1.Name = "uc_registercustomer1";
+            this.uc_registercustomer1.Size = new System.Drawing.Size(1489, 975);
+            this.uc_registercustomer1.TabIndex = 1;
+            this.uc_registercustomer1.Visible = false;
             // 
             // Dashboard
             // 
@@ -348,5 +358,6 @@
         private user_control.Uc_addroom uc_addroom1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private System.Windows.Forms.Panel p4;
+        private user_control.Uc_registercustomer uc_registercustomer1;
     }
 }

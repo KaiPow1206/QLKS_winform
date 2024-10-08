@@ -42,6 +42,8 @@ namespace QLKS
         {
             p2.Visible = true;
             p1.Visible=false;p3.Visible=false;p4.Visible=false;p5.Visible = false;
+            uc_registercustomer1.Visible = true;
+            uc_registercustomer1.BringToFront();
         }
 
         private void btn_thanhToan_Click(object sender, EventArgs e)
