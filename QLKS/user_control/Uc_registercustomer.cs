@@ -15,6 +15,7 @@ namespace QLKS.user_control
     {
         func fn = new func();
         String query;
+        int roomid;
         public Uc_registercustomer()
         {
             InitializeComponent();
@@ -46,10 +47,12 @@ namespace QLKS.user_control
             txt_nameCustomer.Clear();
             txt_phoneNum.Clear();
             txt_nation.Clear();
-            cb_sex.SelectedIndex = -1;
+            cb_gender.SelectedIndex = -1;
             txt_id.Clear();
             txt_addr.Clear();
-            cb_numRoom.SelectedIndex=-1;
+            date_birth.ResetText();
+            date_checkIn.ResetText();
+            cb_numRoom.Items.Clear();
             cb_typeOfRoom.SelectedIndex = -1;
             cb_typeOfBed.SelectedIndex = -1;
             txt_priceRoom.Clear();
@@ -65,13 +68,51 @@ namespace QLKS.user_control
         private void cb_typeOfRoom_SelectedIndexChanged(object sender, EventArgs e)
         {
             cb_numRoom.Items.Clear();
-            query = "select roomNum from rooms where bed ='" + cb_typeOfBed + "' and roomType = '" + cb_typeOfRoom + "' and statusRoom = 'Chill'";
-            setComBoBox(query, cb_numRoom);
+            query = "SELECT roomNum FROM rooms WHERE bed ='" + cb_typeOfBed.Text + "' AND roomType = '" + cb_typeOfRoom.Text + "' AND statusRoom = 'Chill'";
+            setComBoBox(query,cb_numRoom);
         }
 
         private void cb_numRoom_SelectedIndexChanged(object sender, EventArgs e)
         {
-            query = "select price, roomid from rooms where roomNum = '" + cb_numRoom + "'";
+             
+            query = "select price, roomid from rooms where roomNum = '" + cb_numRoom.Text + "'";
+            DataSet ds = fn.getDaTa(query);
+            txt_priceRoom.Text = ds.Tables[0].Rows[0][0].ToString();
+            roomid = int.Parse(ds.Tables[0].Rows[0][1].ToString());
+        }
+
+        private void btn_submit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if(txt_nameCustomer.Text != "" && txt_phoneNum.Text != "" && txt_nation.Text != "" && cb_gender.Text != "" && txt_id.Text != "" && txt_addr.Text != "" && date_birth.Text != "" && date_checkIn.Text != "" && cb_typeOfBed.Text != "" && cb_typeOfRoom.Text != "" && cb_numRoom.Text != "")
+                {
+                    String name = txt_nameCustomer.Text;
+                    Int64 phone = Int64.Parse(txt_phoneNum.Text);
+                    String nation = txt_nation.Text;
+                    String gender = cb_gender.Text;
+                    Int64 id = Int64.Parse(txt_id.Text);
+                    String addr = txt_addr.Text;
+                    String checkin = date_checkIn.Text;
+                    String birthday =date_birth.Text;
+
+
+                    query = "INSERT INTO customer (cname, mobile, nationality, gender, dob, idproof, address, checkin, roomid) " +
+                            "VALUES ('" + name + "', '" + phone + "', '" + nation + "', '" + gender + "', '" + birthday + "', '" + id + "', '" + addr + "', '" + checkin + "', '" + roomid + "'); " +
+                            "UPDATE rooms SET statusRoom = 'Full' WHERE roomNum = '" + cb_numRoom.Text + "';";
+
+                    fn.setData(query, "Success register room " + cb_numRoom.Text + " For " + txt_nameCustomer.Text);
+
+                }
+                else
+                {
+                    MessageBox.Show("Please complete information !!!", "Warning !!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Something Wrong Check Information !!! (Phone Number and CCCD must be a number)", "Error !!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

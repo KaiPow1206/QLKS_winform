@@ -52,7 +52,7 @@
             this.txt_id = new Guna.UI2.WinForms.Guna2TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cb_sex = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cb_gender = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_nation = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -157,6 +157,7 @@
             this.btn_submit.Size = new System.Drawing.Size(196, 99);
             this.btn_submit.TabIndex = 13;
             this.btn_submit.Text = "Submit Register Customer";
+            this.btn_submit.Click += new System.EventHandler(this.btn_submit_Click);
             // 
             // groupBox3
             // 
@@ -417,7 +418,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.cb_sex);
+            this.groupBox1.Controls.Add(this.cb_gender);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txt_nation);
             this.groupBox1.Controls.Add(this.label4);
@@ -431,25 +432,25 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // cb_sex
+            // cb_gender
             // 
-            this.cb_sex.BackColor = System.Drawing.Color.Transparent;
-            this.cb_sex.BorderRadius = 10;
-            this.cb_sex.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cb_sex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_sex.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_sex.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_sex.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cb_sex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cb_sex.ItemHeight = 30;
-            this.cb_sex.Items.AddRange(new object[] {
+            this.cb_gender.BackColor = System.Drawing.Color.Transparent;
+            this.cb_gender.BorderRadius = 10;
+            this.cb_gender.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cb_gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_gender.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cb_gender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cb_gender.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cb_gender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cb_gender.ItemHeight = 30;
+            this.cb_gender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.cb_sex.Location = new System.Drawing.Point(11, 402);
-            this.cb_sex.Name = "cb_sex";
-            this.cb_sex.Size = new System.Drawing.Size(336, 36);
-            this.cb_sex.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.cb_sex.TabIndex = 4;
+            this.cb_gender.Location = new System.Drawing.Point(11, 402);
+            this.cb_gender.Name = "cb_gender";
+            this.cb_gender.Size = new System.Drawing.Size(336, 36);
+            this.cb_gender.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.cb_gender.TabIndex = 4;
             // 
             // label5
             // 
@@ -457,9 +458,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label5.Location = new System.Drawing.Point(6, 360);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 25);
+            this.label5.Size = new System.Drawing.Size(88, 25);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Sex :";
+            this.label5.Text = "Gender :";
             // 
             // txt_nation
             // 
@@ -661,7 +662,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private Guna.UI2.WinForms.Guna2ComboBox cb_sex;
+        private Guna.UI2.WinForms.Guna2ComboBox cb_gender;
         private Guna.UI2.WinForms.Guna2ComboBox cb_typeOfBed;
         private Guna.UI2.WinForms.Guna2ComboBox cb_typeOfRoom;
         private Guna.UI2.WinForms.Guna2DateTimePicker date_checkIn;

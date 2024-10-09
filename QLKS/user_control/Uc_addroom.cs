@@ -86,11 +86,11 @@ namespace QLKS.user_control
                 }
                 else
                 {
-                    MessageBox.Show("Please complete information", "Warning!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please complete information !!!", "Warning !!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             catch(Exception) {
-                MessageBox.Show("Something Wrong Check Information(Room Number and Price must be a number)","Error!!",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Something Wrong Check Information !!! (Room Number and Price must be a number)","Error !!!",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
