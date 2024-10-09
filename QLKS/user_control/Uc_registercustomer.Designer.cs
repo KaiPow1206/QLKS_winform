@@ -35,7 +35,6 @@
             this.btn_cancelAddRoom = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_submit = new Guna.UI2.WinForms.Guna2GradientButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txt_numberRoom = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_priceRoom = new Guna.UI2.WinForms.Guna2TextBox();
             this.cb_typeOfBed = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cb_typeOfRoom = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -67,6 +66,7 @@
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.cb_numRoom = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -161,7 +161,7 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.White;
-            this.groupBox3.Controls.Add(this.txt_numberRoom);
+            this.groupBox3.Controls.Add(this.cb_numRoom);
             this.groupBox3.Controls.Add(this.txt_priceRoom);
             this.groupBox3.Controls.Add(this.cb_typeOfBed);
             this.groupBox3.Controls.Add(this.cb_typeOfRoom);
@@ -174,28 +174,6 @@
             this.groupBox3.Size = new System.Drawing.Size(373, 518);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
-            // 
-            // txt_numberRoom
-            // 
-            this.txt_numberRoom.Animated = true;
-            this.txt_numberRoom.BorderRadius = 8;
-            this.txt_numberRoom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_numberRoom.DefaultText = "";
-            this.txt_numberRoom.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_numberRoom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_numberRoom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_numberRoom.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_numberRoom.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_numberRoom.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_numberRoom.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_numberRoom.Location = new System.Drawing.Point(20, 58);
-            this.txt_numberRoom.Name = "txt_numberRoom";
-            this.txt_numberRoom.PasswordChar = '\0';
-            this.txt_numberRoom.PlaceholderText = "Enter Number Of Room..";
-            this.txt_numberRoom.SelectedText = "";
-            this.txt_numberRoom.Size = new System.Drawing.Size(336, 36);
-            this.txt_numberRoom.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_numberRoom.TabIndex = 9;
             // 
             // txt_priceRoom
             // 
@@ -235,11 +213,12 @@
             "Double",
             "King",
             "Family"});
-            this.cb_typeOfBed.Location = new System.Drawing.Point(20, 278);
+            this.cb_typeOfBed.Location = new System.Drawing.Point(20, 58);
             this.cb_typeOfBed.Name = "cb_typeOfBed";
             this.cb_typeOfBed.Size = new System.Drawing.Size(336, 36);
             this.cb_typeOfBed.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.cb_typeOfBed.TabIndex = 11;
+            this.cb_typeOfBed.SelectedIndexChanged += new System.EventHandler(this.cb_typeOfBed_SelectedIndexChanged);
             // 
             // cb_typeOfRoom
             // 
@@ -261,6 +240,7 @@
             this.cb_typeOfRoom.Size = new System.Drawing.Size(336, 36);
             this.cb_typeOfRoom.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.cb_typeOfRoom.TabIndex = 10;
+            this.cb_typeOfRoom.SelectedIndexChanged += new System.EventHandler(this.cb_typeOfRoom_SelectedIndexChanged);
             // 
             // label10
             // 
@@ -276,7 +256,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label11.Location = new System.Drawing.Point(15, 236);
+            this.label11.Location = new System.Drawing.Point(15, 16);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(127, 25);
             this.label11.TabIndex = 22;
@@ -296,7 +276,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label13.Location = new System.Drawing.Point(15, 16);
+            this.label13.Location = new System.Drawing.Point(15, 236);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(162, 25);
             this.label13.TabIndex = 16;
@@ -612,6 +592,24 @@
             this.guna2Elipse5.BorderRadius = 10;
             this.guna2Elipse5.TargetControl = this.panel1;
             // 
+            // cb_numRoom
+            // 
+            this.cb_numRoom.BackColor = System.Drawing.Color.Transparent;
+            this.cb_numRoom.BorderRadius = 10;
+            this.cb_numRoom.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cb_numRoom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_numRoom.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cb_numRoom.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cb_numRoom.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cb_numRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cb_numRoom.ItemHeight = 30;
+            this.cb_numRoom.Location = new System.Drawing.Point(20, 278);
+            this.cb_numRoom.Name = "cb_numRoom";
+            this.cb_numRoom.Size = new System.Drawing.Size(336, 36);
+            this.cb_numRoom.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.cb_numRoom.TabIndex = 23;
+            this.cb_numRoom.SelectedIndexChanged += new System.EventHandler(this.cb_numRoom_SelectedIndexChanged);
+            // 
             // Uc_registercustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -669,10 +667,10 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker date_checkIn;
         private Guna.UI2.WinForms.Guna2DateTimePicker date_birth;
         private Guna.UI2.WinForms.Guna2TextBox txt_priceRoom;
-        private Guna.UI2.WinForms.Guna2TextBox txt_numberRoom;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
+        private Guna.UI2.WinForms.Guna2ComboBox cb_numRoom;
     }
 }
