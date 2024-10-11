@@ -16,5 +16,20 @@ namespace QLKS.user_control
         {
             InitializeComponent();
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Hide();
+        }
+
+        private void btn_cancelAddRoom_Click(object sender, EventArgs e)
+        {
+            txt_nameCustomer.Clear();
+            txt_numberRoom.Clear();
+            txt_id.Clear();
+            date_checkout.ResetText();
+        }
     }
 }

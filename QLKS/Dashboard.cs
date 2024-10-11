@@ -50,6 +50,8 @@ namespace QLKS
         {
             p3.Visible = true;
             p1.Visible = false;p2.Visible=false;p4.Visible=false;p5.Visible = false;
+            uc_payment1.Visible = true;
+            uc_payment1.BringToFront();
         }
 
         private void btn_chiTietKhachHang_Click(object sender, EventArgs e)
