@@ -97,12 +97,12 @@ namespace QLKS.user_control
                     String birthday =date_birth.Text;
 
 
-                    query = "INSERT INTO customer (cname, mobile, nationality, gender, dob, idproof, address, checkin, roomid) " +
+                    query = "INSERT INTO customer (cname, phone, nationality, gender, birthday, id, address, checkin, roomid) " +
                             "VALUES ('" + name + "', '" + phone + "', '" + nation + "', '" + gender + "', '" + birthday + "', '" + id + "', '" + addr + "', '" + checkin + "', '" + roomid + "'); " +
                             "UPDATE rooms SET statusRoom = 'Full' WHERE roomNum = '" + cb_numRoom.Text + "';";
 
                     fn.setData(query, "Success register room " + cb_numRoom.Text + " For " + txt_nameCustomer.Text);
-
+                    clearAll();
                 }
                 else
                 {
@@ -113,6 +113,21 @@ namespace QLKS.user_control
             {
                 MessageBox.Show("Something Wrong Check Information !!! (Phone Number and CCCD must be a number)", "Error !!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+        void clearAll()
+        {
+            txt_nameCustomer.Clear();
+            txt_phoneNum.Clear();
+            txt_nation.Clear();
+            cb_gender.SelectedIndex = -1;
+            txt_id.Clear();
+            txt_addr.Clear();
+            date_birth.ResetText();
+            date_checkIn.ResetText();
+            cb_numRoom.Items.Clear();
+            cb_typeOfRoom.SelectedIndex = -1;
+            cb_typeOfBed.SelectedIndex = -1;
+            txt_priceRoom.Clear();
         }
     }
 }

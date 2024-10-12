@@ -41,14 +41,14 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txt_nameCustomer = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txt_numberRoom = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.date_checkout = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
             this.txt_id = new Guna.UI2.WinForms.Guna2TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.date_checkout = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_numberRoom = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_nameCustomer = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -123,6 +123,7 @@
             this.DataGridView1.Name = "DataGridView1";
             this.DataGridView1.ReadOnly = true;
             this.DataGridView1.RowHeadersVisible = false;
+            this.DataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.DataGridView1.Size = new System.Drawing.Size(1332, 295);
             this.DataGridView1.TabIndex = 30;
             this.DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -146,6 +147,7 @@
             this.DataGridView1.ThemeStyle.RowsStyle.Height = 22;
             this.DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
             // btn_cancelAddRoom
             // 
@@ -187,6 +189,7 @@
             this.btn_submit.Size = new System.Drawing.Size(181, 99);
             this.btn_submit.TabIndex = 31;
             this.btn_submit.Text = "Submit Check Out";
+            this.btn_submit.Click += new System.EventHandler(this.btn_submit_Click);
             // 
             // guna2Elipse1
             // 
@@ -213,95 +216,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(789, 322);
             this.panel1.TabIndex = 33;
-            // 
-            // txt_nameCustomer
-            // 
-            this.txt_nameCustomer.Animated = true;
-            this.txt_nameCustomer.BorderRadius = 10;
-            this.txt_nameCustomer.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_nameCustomer.DefaultText = "";
-            this.txt_nameCustomer.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_nameCustomer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_nameCustomer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_nameCustomer.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_nameCustomer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_nameCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_nameCustomer.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_nameCustomer.Location = new System.Drawing.Point(22, 112);
-            this.txt_nameCustomer.Name = "txt_nameCustomer";
-            this.txt_nameCustomer.PasswordChar = '\0';
-            this.txt_nameCustomer.PlaceholderText = "Enter Name..";
-            this.txt_nameCustomer.SelectedText = "";
-            this.txt_nameCustomer.Size = new System.Drawing.Size(331, 36);
-            this.txt_nameCustomer.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_nameCustomer.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label2.Location = new System.Drawing.Point(17, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Name of customer :";
-            // 
-            // txt_numberRoom
-            // 
-            this.txt_numberRoom.Animated = true;
-            this.txt_numberRoom.BorderRadius = 8;
-            this.txt_numberRoom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_numberRoom.DefaultText = "";
-            this.txt_numberRoom.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_numberRoom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_numberRoom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_numberRoom.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_numberRoom.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_numberRoom.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_numberRoom.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_numberRoom.Location = new System.Drawing.Point(22, 232);
-            this.txt_numberRoom.Name = "txt_numberRoom";
-            this.txt_numberRoom.PasswordChar = '\0';
-            this.txt_numberRoom.PlaceholderText = "Enter Number Of Room..";
-            this.txt_numberRoom.SelectedText = "";
-            this.txt_numberRoom.Size = new System.Drawing.Size(331, 36);
-            this.txt_numberRoom.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_numberRoom.TabIndex = 35;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label3.Location = new System.Drawing.Point(17, 168);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(162, 25);
-            this.label3.TabIndex = 36;
-            this.label3.Text = "Number of room :";
-            // 
-            // date_checkout
-            // 
-            this.date_checkout.BorderRadius = 10;
-            this.date_checkout.Checked = true;
-            this.date_checkout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
-            this.date_checkout.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.date_checkout.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.date_checkout.Location = new System.Drawing.Point(421, 232);
-            this.date_checkout.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.date_checkout.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.date_checkout.Name = "date_checkout";
-            this.date_checkout.Size = new System.Drawing.Size(332, 36);
-            this.date_checkout.TabIndex = 37;
-            this.date_checkout.Value = new System.DateTime(2024, 10, 8, 13, 46, 58, 553);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label7.Location = new System.Drawing.Point(416, 168);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(117, 25);
-            this.label7.TabIndex = 38;
-            this.label7.Text = "Check Out :";
             // 
             // txt_id
             // 
@@ -335,6 +249,96 @@
             this.label9.TabIndex = 40;
             this.label9.Text = "CCCD of customer :";
             // 
+            // date_checkout
+            // 
+            this.date_checkout.BorderRadius = 10;
+            this.date_checkout.Checked = true;
+            this.date_checkout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
+            this.date_checkout.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.date_checkout.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.date_checkout.Location = new System.Drawing.Point(421, 232);
+            this.date_checkout.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.date_checkout.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.date_checkout.Name = "date_checkout";
+            this.date_checkout.Size = new System.Drawing.Size(332, 36);
+            this.date_checkout.TabIndex = 37;
+            this.date_checkout.Value = new System.DateTime(2024, 10, 8, 13, 46, 58, 553);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label7.Location = new System.Drawing.Point(416, 168);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(117, 25);
+            this.label7.TabIndex = 38;
+            this.label7.Text = "Check Out :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label3.Location = new System.Drawing.Point(17, 168);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(162, 25);
+            this.label3.TabIndex = 36;
+            this.label3.Text = "Number of room :";
+            // 
+            // txt_numberRoom
+            // 
+            this.txt_numberRoom.Animated = true;
+            this.txt_numberRoom.BorderRadius = 8;
+            this.txt_numberRoom.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_numberRoom.DefaultText = "";
+            this.txt_numberRoom.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_numberRoom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_numberRoom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_numberRoom.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_numberRoom.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_numberRoom.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_numberRoom.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_numberRoom.Location = new System.Drawing.Point(22, 232);
+            this.txt_numberRoom.Name = "txt_numberRoom";
+            this.txt_numberRoom.PasswordChar = '\0';
+            this.txt_numberRoom.PlaceholderText = "Enter Number Of Room..";
+            this.txt_numberRoom.SelectedText = "";
+            this.txt_numberRoom.Size = new System.Drawing.Size(331, 36);
+            this.txt_numberRoom.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txt_numberRoom.TabIndex = 35;
+            // 
+            // txt_nameCustomer
+            // 
+            this.txt_nameCustomer.Animated = true;
+            this.txt_nameCustomer.BorderRadius = 10;
+            this.txt_nameCustomer.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_nameCustomer.DefaultText = "";
+            this.txt_nameCustomer.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_nameCustomer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_nameCustomer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_nameCustomer.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_nameCustomer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_nameCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_nameCustomer.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_nameCustomer.Location = new System.Drawing.Point(22, 112);
+            this.txt_nameCustomer.Name = "txt_nameCustomer";
+            this.txt_nameCustomer.PasswordChar = '\0';
+            this.txt_nameCustomer.PlaceholderText = "Enter Name..";
+            this.txt_nameCustomer.SelectedText = "";
+            this.txt_nameCustomer.Size = new System.Drawing.Size(331, 36);
+            this.txt_nameCustomer.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txt_nameCustomer.TabIndex = 3;
+            this.txt_nameCustomer.TextChanged += new System.EventHandler(this.txt_nameCustomer_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label2.Location = new System.Drawing.Point(17, 57);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(181, 25);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Name of customer :";
+            // 
             // Uc_payment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -348,6 +352,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Uc_payment";
             this.Size = new System.Drawing.Size(1489, 975);
+            this.Load += new System.EventHandler(this.Uc_payment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

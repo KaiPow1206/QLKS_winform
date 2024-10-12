@@ -27,13 +27,13 @@ namespace QLKS.user_control
 
         private void btn_cancelAddRoom_Click(object sender, EventArgs e)
         {
-           txt_numberRoom.Clear();
-           txt_priceRoom.Clear();
-           cb_typeOfBed.SelectedIndex =-1;
-           cb_typeOfRoom.SelectedIndex = -1;
-           cb_statusClean.SelectedIndex = -1;
-           cb_service.SelectedIndex = -1;
-           cb_statusRoom.SelectedIndex = -1;
+            txt_numberRoom.Clear();
+            txt_priceRoom.Clear();
+            cb_typeOfBed.SelectedIndex = -1;
+            cb_typeOfRoom.SelectedIndex = -1;
+            cb_statusClean.SelectedIndex = -1;
+            cb_service.SelectedIndex = -1;
+            cb_statusRoom.SelectedIndex = -1;
         }
 
         private void txt_priceRoom_TextChanged(object sender, EventArgs e)
@@ -83,6 +83,7 @@ namespace QLKS.user_control
 
                     fn.setData(query, "Add Room Successful!");
                     Uc_addroom_Load(this, null);
+                    clearAll();
                 }
                 else
                 {
@@ -102,6 +103,17 @@ namespace QLKS.user_control
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        void clearAll()
+        {
+            txt_numberRoom.Clear();
+            txt_priceRoom.Clear();
+            cb_typeOfBed.SelectedIndex = -1;
+            cb_typeOfRoom.SelectedIndex = -1;
+            cb_statusClean.SelectedIndex = -1;
+            cb_service.SelectedIndex = -1;
+            cb_statusRoom.SelectedIndex = -1;
         }
     }
 }
