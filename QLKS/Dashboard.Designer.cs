@@ -32,6 +32,11 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.uc_employment1 = new QLKS.user_control.Uc_employment();
+            this.uc_customerdetails1 = new QLKS.user_control.Uc_customerdetails();
+            this.uc_payment1 = new QLKS.user_control.Uc_payment();
+            this.uc_registercustomer1 = new QLKS.user_control.Uc_registercustomer();
+            this.uc_addroom1 = new QLKS.user_control.Uc_addroom();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -50,9 +55,6 @@
             this.guna2DragControl3 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.uc_registercustomer1 = new QLKS.user_control.Uc_registercustomer();
-            this.uc_addroom1 = new QLKS.user_control.Uc_addroom();
-            this.uc_payment1 = new QLKS.user_control.Uc_payment();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
@@ -72,6 +74,8 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.uc_employment1);
+            this.panel1.Controls.Add(this.uc_customerdetails1);
             this.panel1.Controls.Add(this.uc_payment1);
             this.panel1.Controls.Add(this.uc_registercustomer1);
             this.panel1.Controls.Add(this.uc_addroom1);
@@ -80,6 +84,46 @@
             this.panel1.Size = new System.Drawing.Size(1489, 975);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // uc_employment1
+            // 
+            this.uc_employment1.Location = new System.Drawing.Point(-2, -2);
+            this.uc_employment1.Name = "uc_employment1";
+            this.uc_employment1.Size = new System.Drawing.Size(1489, 975);
+            this.uc_employment1.TabIndex = 4;
+            this.uc_employment1.Visible = false;
+            // 
+            // uc_customerdetails1
+            // 
+            this.uc_customerdetails1.Location = new System.Drawing.Point(-2, -2);
+            this.uc_customerdetails1.Name = "uc_customerdetails1";
+            this.uc_customerdetails1.Size = new System.Drawing.Size(1489, 975);
+            this.uc_customerdetails1.TabIndex = 3;
+            this.uc_customerdetails1.Visible = false;
+            // 
+            // uc_payment1
+            // 
+            this.uc_payment1.Location = new System.Drawing.Point(-2, -2);
+            this.uc_payment1.Name = "uc_payment1";
+            this.uc_payment1.Size = new System.Drawing.Size(1489, 975);
+            this.uc_payment1.TabIndex = 2;
+            this.uc_payment1.Visible = false;
+            // 
+            // uc_registercustomer1
+            // 
+            this.uc_registercustomer1.Location = new System.Drawing.Point(-2, -2);
+            this.uc_registercustomer1.Name = "uc_registercustomer1";
+            this.uc_registercustomer1.Size = new System.Drawing.Size(1489, 975);
+            this.uc_registercustomer1.TabIndex = 1;
+            this.uc_registercustomer1.Visible = false;
+            // 
+            // uc_addroom1
+            // 
+            this.uc_addroom1.Location = new System.Drawing.Point(-2, -2);
+            this.uc_addroom1.Name = "uc_addroom1";
+            this.uc_addroom1.Size = new System.Drawing.Size(1489, 975);
+            this.uc_addroom1.TabIndex = 0;
+            this.uc_addroom1.Visible = false;
             // 
             // guna2ControlBox1
             // 
@@ -296,30 +340,6 @@
             this.guna2PictureBox3.TabIndex = 10;
             this.guna2PictureBox3.TabStop = false;
             // 
-            // uc_registercustomer1
-            // 
-            this.uc_registercustomer1.Location = new System.Drawing.Point(-2, -2);
-            this.uc_registercustomer1.Name = "uc_registercustomer1";
-            this.uc_registercustomer1.Size = new System.Drawing.Size(1489, 975);
-            this.uc_registercustomer1.TabIndex = 1;
-            this.uc_registercustomer1.Visible = false;
-            // 
-            // uc_addroom1
-            // 
-            this.uc_addroom1.Location = new System.Drawing.Point(-2, -2);
-            this.uc_addroom1.Name = "uc_addroom1";
-            this.uc_addroom1.Size = new System.Drawing.Size(1489, 975);
-            this.uc_addroom1.TabIndex = 0;
-            this.uc_addroom1.Visible = false;
-            // 
-            // uc_payment1
-            // 
-            this.uc_payment1.Location = new System.Drawing.Point(-2, -2);
-            this.uc_payment1.Name = "uc_payment1";
-            this.uc_payment1.Size = new System.Drawing.Size(1489, 975);
-            this.uc_payment1.TabIndex = 2;
-            this.uc_payment1.Visible = false;
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -370,5 +390,7 @@
         private System.Windows.Forms.Panel p4;
         private user_control.Uc_registercustomer uc_registercustomer1;
         private user_control.Uc_payment uc_payment1;
+        private user_control.Uc_customerdetails uc_customerdetails1;
+        private user_control.Uc_employment uc_employment1;
     }
 }

@@ -58,12 +58,16 @@ namespace QLKS
         {
             p4.Visible = true;
             p1.Visible = false; p2.Visible = false; p3.Visible = false; p5.Visible = false;
+            uc_customerdetails1.Visible = true;
+            uc_customerdetails1.BringToFront();
         }
 
         private void btn_nhanVien_Click(object sender, EventArgs e)
         {
             p5.Visible = true;
             p1.Visible = false; p2.Visible = false; p3.Visible = false; p4.Visible = false;
+            uc_employment1.Visible = true;
+            uc_employment1.BringToFront();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
