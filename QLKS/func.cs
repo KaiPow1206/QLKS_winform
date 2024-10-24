@@ -44,7 +44,7 @@ namespace QLKS
             cmd.ExecuteNonQuery();
             conn.Close();
 
-            MessageBox.Show(mess, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(mess, "Success!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         public SqlDataReader getCombo (string query)

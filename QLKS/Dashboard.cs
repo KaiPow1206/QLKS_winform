@@ -1,5 +1,6 @@
 ﻿using QLKS.user_control;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,8 @@ namespace QLKS
 {
     public partial class Dashboard : Form
     {
+        func fn = new func();
+        String query;
         public Dashboard()
         {
             InitializeComponent();
@@ -77,7 +80,23 @@ namespace QLKS
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-            
+            dataRoom(guna2DataGridView3);
+            dataemployee(guna2DataGridView4);
+            guna2DataGridView4.Columns["gmailid"].Width = 200;
+        }
+
+        public void dataRoom(DataGridView dgv)
+        {
+            query = "SELECT * FROM rooms";
+            DataSet ds = fn.getDaTa(query);
+            dgv.DataSource = ds.Tables[0];
+        }
+
+        public void dataemployee(DataGridView dgv)
+        {
+            query = "SELECT * FROM employee";
+            DataSet ds = fn.getDaTa(query);
+            dgv.DataSource = ds.Tables[0];
         }
 
         private void guna2PictureBox3_Click(object sender, EventArgs e)

@@ -49,7 +49,7 @@ namespace QLKS
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            if (txtAccount.Text != "" || txtPass.Text != "")
+            if (txtAccount.Text != "admin" || txtPass.Text != "123")
             {
                 error.Visible = true;
                 txtPass.Clear();
