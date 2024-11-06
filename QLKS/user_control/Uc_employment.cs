@@ -110,7 +110,10 @@ namespace QLKS.user_control
            {
                 dataEmployee(DataGridView2);
                 DataGridView2.Columns["gmailid"].Width = 200;
-            }
+           }else if (tabEmployment.SelectedIndex == 3)
+           {
+                serviceEmployee(DataGridView3);
+           }
         }
 
         public void dataEmployee(DataGridView dgv)
@@ -132,6 +135,65 @@ namespace QLKS.user_control
                     getMaxID();
                 }
             }
+        }
+
+        public void serviceEmployee(DataGridView dgv)
+        {
+            query = "SELECT * FROM rooms";
+            DataSet ds = fn.getDaTa(query);
+            dgv.DataSource = ds.Tables[0];
+        }
+        private void clear()
+        {
+            txt_num_room.Clear();
+            txt_id_service.Clear();
+        }
+
+        private void btn_cleaned_Click(object sender, EventArgs e)
+        {
+            if (txt_id_service.Text != "" && txt_num_room.Text != "")
+            {
+                if (MessageBox.Show("Do you wanna do this action ??", "Yes", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    Int64 employee = Int64.Parse(txt_id_service.Text);
+                    Int64 room = Int64.Parse(txt_num_room.Text);
+
+
+
+                    query = "UPDATE employee SET roomid = NULL WHERE eid = " + employee + "; " +
+                            "UPDATE rooms SET statusClean = 'Clean' WHERE roomid = '" + txt_num_room.Text + "';";
+                    fn.setData(query, "Successful Clean Room");
+                    tabEmployment_SelectedIndexChanged(this, null);
+                    clear();
+                }
+            }
+        }
+
+        private void btn_cleanning_Click(object sender, EventArgs e)
+        {
+
+            if (txt_id_service.Text != "" && txt_num_room.Text != "")
+            {
+                if (MessageBox.Show("Do you wanna do this action ??", "Yes", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    Int64 employee = Int64.Parse(txt_id_service.Text);
+                    Int64 room = Int64.Parse(txt_num_room.Text);
+
+
+
+                    query = "UPDATE employee SET roomid = '" + room + "' WHERE eid = " + employee + "; " +
+                            "UPDATE rooms SET statusClean = 'Cleaning' WHERE roomid = '" + txt_num_room.Text + "';";
+                    fn.setData(query, "Successful Add Employee Cleaning Room");
+                    tabEmployment_SelectedIndexChanged(this, null);
+                    clear();
+                }
+            }
+        }
+
+
+        private void txt_num_room_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
