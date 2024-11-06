@@ -112,8 +112,9 @@ namespace QLKS.user_control
                 DataGridView2.Columns["gmailid"].Width = 200;
            }else if (tabEmployment.SelectedIndex == 3)
            {
-                serviceEmployee(DataGridView3);
-           }
+                serviceRoom(DataGridView3);
+                serviceEmployee(DataGridView4);
+            }
         }
 
         public void dataEmployee(DataGridView dgv)
@@ -139,7 +140,13 @@ namespace QLKS.user_control
 
         public void serviceEmployee(DataGridView dgv)
         {
-            query = "SELECT * FROM rooms";
+            query = "SELECT eid,ename,mobile,gender FROM employee";
+            DataSet ds = fn.getDaTa(query);
+            dgv.DataSource = ds.Tables[0];
+        }
+        public void serviceRoom(DataGridView dgv)
+        {
+            query = "SELECT roomid,roomNum,roomType,statusClean FROM rooms";
             DataSet ds = fn.getDaTa(query);
             dgv.DataSource = ds.Tables[0];
         }
